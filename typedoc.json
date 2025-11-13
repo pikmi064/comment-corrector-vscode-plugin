@@ -1,0 +1,15 @@
+{
+  "plugin": ["typedoc-plugin-markdown"],
+  "entryPoints": ["src/extension.ts"],
+  "out": "docs",
+  "exclude": ["**/*.test.ts", "**/test/**"],
+  "readme": "README.md",
+  "name": "CommentCorrector",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "excludeInternal": false,
+  "theme" : "markdown"
+}
+

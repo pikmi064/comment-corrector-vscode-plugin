@@ -1,0 +1,61 @@
+{
+  "name": "commentcorrector",
+  "displayName": "CommentCorrector",
+  "description": "Расширение изменяет неформальные комментарии, приводя их к стандартизированному виду.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commentcorrector.CorrectComments",
+        "title": "Исправить некорректные комментарии."
+      },
+      {
+        "command": "commentcorrector.HighlightComments",
+        "title": "Выделить корректные/некорректные комментарии цветом."
+      },
+      {
+        "command": "commentcorrector.DisableHighlight",
+        "title": "Отменить выделение комментариев цветом."
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test",
+    "docs": "typedoc",
+    "docs:watch": "typedoc --watch"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.55.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.105.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.1",
+    "typedoc": "^0.28.14",
+    "typedoc-plugin-markdown": "^4.9.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3"
+  },
+  "dependencies": {
+    "@azure-rest/ai-inference": "latest",
+    "@azure/core-auth": "latest",
+    "@azure/core-sse": "latest",
+    "dotenv": "latest",
+    "openai": "latest",
+    "zod": "latest"
+  }
+}
