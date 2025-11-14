@@ -23,8 +23,8 @@ CommentCorrector — расширение VS Code, которое анализи
 
 1. Склонируйте репозиторий и установите зависимости.
    ```bash
-   git clone https://github.com/your-org/commentcorrector.git
-   cd commentcorrector
+   git clone https://github.com/pikmi064/comment-corrector-vscode-plugin
+   cd comment-corrector-vscode-plugin
    npm install
    ```
 2. Откройте проект в VS Code и соберите расширение.
